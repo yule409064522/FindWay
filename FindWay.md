@@ -23,12 +23,14 @@ public class test1 {
             updateNeighbors(nearest,nodes);
             nearest.mark();
         }
-        @SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
         int loc = sc.nextInt();
         print(nodes,root,loc);
-    }
-    
+
+​		sc.close();
+
+​    }
+​    
 
     public static List<Node> initNodes(int[][] matrix,int root){
         List<Node> list =new ArrayList<>();
